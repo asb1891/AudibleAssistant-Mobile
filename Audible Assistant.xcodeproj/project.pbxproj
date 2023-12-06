@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350AD2452B1FD4D800DC2EC3 /* Audible_AssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AD2442B1FD4D800DC2EC3 /* Audible_AssistantApp.swift */; };
+		350AD2472B1FD4D800DC2EC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AD2462B1FD4D800DC2EC3 /* ContentView.swift */; };
+		350AD2492B1FD4DA00DC2EC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350AD2482B1FD4DA00DC2EC3 /* Assets.xcassets */; };
+		350AD24D2B1FD4DA00DC2EC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350AD24C2B1FD4DA00DC2EC3 /* Preview Assets.xcassets */; };
+		350AD2572B1FD4DA00DC2EC3 /* Audible_AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AD2562B1FD4DA00DC2EC3 /* Audible_AssistantTests.swift */; };
+		350AD2612B1FD4DA00DC2EC3 /* Audible_AssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AD2602B1FD4DA00DC2EC3 /* Audible_AssistantUITests.swift */; };
+		350AD2632B1FD4DA00DC2EC3 /* Audible_AssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AD2622B1FD4DA00DC2EC3 /* Audible_AssistantUITestsLaunchTests.swift */; };
+		350AD2712B1FD5FE00DC2EC3 /* SiriWaveView in Frameworks */ = {isa = PBXBuildFile; productRef = 350AD2702B1FD5FE00DC2EC3 /* SiriWaveView */; };
+		350AD2742B1FD7A500DC2EC3 /* XCAOpenAIClient in Frameworks */ = {isa = PBXBuildFile; productRef = 350AD2732B1FD7A500DC2EC3 /* XCAOpenAIClient */; };
+		350AD2762B1FD97800DC2EC3 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AD2752B1FD97800DC2EC3 /* Models.swift */; };
+		350AD2782B1FD9F500DC2EC3 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350AD2772B1FD9F500DC2EC3 /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		350AD2532B1FD4DA00DC2EC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 350AD2392B1FD4D800DC2EC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 350AD2402B1FD4D800DC2EC3;
+			remoteInfo = "Audible Assistant";
+		};
+		350AD25D2B1FD4DA00DC2EC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 350AD2392B1FD4D800DC2EC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 350AD2402B1FD4D800DC2EC3;
+			remoteInfo = "Audible Assistant";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		350AD2412B1FD4D800DC2EC3 /* Audible Assistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Audible Assistant.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		350AD2442B1FD4D800DC2EC3 /* Audible_AssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audible_AssistantApp.swift; sourceTree = "<group>"; };
+		350AD2462B1FD4D800DC2EC3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		350AD2482B1FD4DA00DC2EC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		350AD24A2B1FD4DA00DC2EC3 /* Audible_Assistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Audible_Assistant.entitlements; sourceTree = "<group>"; };
+		350AD24C2B1FD4DA00DC2EC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		350AD2522B1FD4DA00DC2EC3 /* Audible AssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audible AssistantTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		350AD2562B1FD4DA00DC2EC3 /* Audible_AssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audible_AssistantTests.swift; sourceTree = "<group>"; };
+		350AD25C2B1FD4DA00DC2EC3 /* Audible AssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audible AssistantUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		350AD2602B1FD4DA00DC2EC3 /* Audible_AssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audible_AssistantUITests.swift; sourceTree = "<group>"; };
+		350AD2622B1FD4DA00DC2EC3 /* Audible_AssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audible_AssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		350AD2752B1FD97800DC2EC3 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		350AD2772B1FD9F500DC2EC3 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		350AD27C2B1FE53600DC2EC3 /* AudibleAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudibleAssistant.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		350AD23E2B1FD4D800DC2EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350AD2742B1FD7A500DC2EC3 /* XCAOpenAIClient in Frameworks */,
+				350AD2712B1FD5FE00DC2EC3 /* SiriWaveView in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350AD24F2B1FD4DA00DC2EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350AD2592B1FD4DA00DC2EC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		350AD2382B1FD4D800DC2EC3 = {
+			isa = PBXGroup;
+			children = (
+				350AD2432B1FD4D800DC2EC3 /* Audible Assistant */,
+				350AD2552B1FD4DA00DC2EC3 /* Audible AssistantTests */,
+				350AD25F2B1FD4DA00DC2EC3 /* Audible AssistantUITests */,
+				350AD2422B1FD4D800DC2EC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		350AD2422B1FD4D800DC2EC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				350AD2412B1FD4D800DC2EC3 /* Audible Assistant.app */,
+				350AD2522B1FD4DA00DC2EC3 /* Audible AssistantTests.xctest */,
+				350AD25C2B1FD4DA00DC2EC3 /* Audible AssistantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		350AD2432B1FD4D800DC2EC3 /* Audible Assistant */ = {
+			isa = PBXGroup;
+			children = (
+				350AD2442B1FD4D800DC2EC3 /* Audible_AssistantApp.swift */,
+				350AD2462B1FD4D800DC2EC3 /* ContentView.swift */,
+				350AD2482B1FD4DA00DC2EC3 /* Assets.xcassets */,
+				350AD24A2B1FD4DA00DC2EC3 /* Audible_Assistant.entitlements */,
+				350AD24B2B1FD4DA00DC2EC3 /* Preview Content */,
+				350AD2752B1FD97800DC2EC3 /* Models.swift */,
+				350AD2772B1FD9F500DC2EC3 /* ViewModel.swift */,
+				350AD27C2B1FE53600DC2EC3 /* AudibleAssistant.entitlements */,
+			);
+			path = "Audible Assistant";
+			sourceTree = "<group>";
+		};
+		350AD24B2B1FD4DA00DC2EC3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				350AD24C2B1FD4DA00DC2EC3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		350AD2552B1FD4DA00DC2EC3 /* Audible AssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				350AD2562B1FD4DA00DC2EC3 /* Audible_AssistantTests.swift */,
+			);
+			path = "Audible AssistantTests";
+			sourceTree = "<group>";
+		};
+		350AD25F2B1FD4DA00DC2EC3 /* Audible AssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				350AD2602B1FD4DA00DC2EC3 /* Audible_AssistantUITests.swift */,
+				350AD2622B1FD4DA00DC2EC3 /* Audible_AssistantUITestsLaunchTests.swift */,
+			);
+			path = "Audible AssistantUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		350AD2402B1FD4D800DC2EC3 /* Audible Assistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350AD2662B1FD4DA00DC2EC3 /* Build configuration list for PBXNativeTarget "Audible Assistant" */;
+			buildPhases = (
+				350AD23D2B1FD4D800DC2EC3 /* Sources */,
+				350AD23E2B1FD4D800DC2EC3 /* Frameworks */,
+				350AD23F2B1FD4D800DC2EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Audible Assistant";
+			packageProductDependencies = (
+				350AD2702B1FD5FE00DC2EC3 /* SiriWaveView */,
+				350AD2732B1FD7A500DC2EC3 /* XCAOpenAIClient */,
+			);
+			productName = "Audible Assistant";
+			productReference = 350AD2412B1FD4D800DC2EC3 /* Audible Assistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		350AD2512B1FD4DA00DC2EC3 /* Audible AssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350AD2692B1FD4DA00DC2EC3 /* Build configuration list for PBXNativeTarget "Audible AssistantTests" */;
+			buildPhases = (
+				350AD24E2B1FD4DA00DC2EC3 /* Sources */,
+				350AD24F2B1FD4DA00DC2EC3 /* Frameworks */,
+				350AD2502B1FD4DA00DC2EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				350AD2542B1FD4DA00DC2EC3 /* PBXTargetDependency */,
+			);
+			name = "Audible AssistantTests";
+			productName = "Audible AssistantTests";
+			productReference = 350AD2522B1FD4DA00DC2EC3 /* Audible AssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		350AD25B2B1FD4DA00DC2EC3 /* Audible AssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 350AD26C2B1FD4DA00DC2EC3 /* Build configuration list for PBXNativeTarget "Audible AssistantUITests" */;
+			buildPhases = (
+				350AD2582B1FD4DA00DC2EC3 /* Sources */,
+				350AD2592B1FD4DA00DC2EC3 /* Frameworks */,
+				350AD25A2B1FD4DA00DC2EC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				350AD25E2B1FD4DA00DC2EC3 /* PBXTargetDependency */,
+			);
+			name = "Audible AssistantUITests";
+			productName = "Audible AssistantUITests";
+			productReference = 350AD25C2B1FD4DA00DC2EC3 /* Audible AssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		350AD2392B1FD4D800DC2EC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					350AD2402B1FD4D800DC2EC3 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					350AD2512B1FD4DA00DC2EC3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 350AD2402B1FD4D800DC2EC3;
+					};
+					350AD25B2B1FD4DA00DC2EC3 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 350AD2402B1FD4D800DC2EC3;
+					};
+				};
+			};
+			buildConfigurationList = 350AD23C2B1FD4D800DC2EC3 /* Build configuration list for PBXProject "Audible Assistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 350AD2382B1FD4D800DC2EC3;
+			packageReferences = (
+				350AD26F2B1FD5FE00DC2EC3 /* XCRemoteSwiftPackageReference "SiriWaveView" */,
+				350AD2722B1FD7A500DC2EC3 /* XCRemoteSwiftPackageReference "Audible-Assistant" */,
+			);
+			productRefGroup = 350AD2422B1FD4D800DC2EC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				350AD2402B1FD4D800DC2EC3 /* Audible Assistant */,
+				350AD2512B1FD4DA00DC2EC3 /* Audible AssistantTests */,
+				350AD25B2B1FD4DA00DC2EC3 /* Audible AssistantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		350AD23F2B1FD4D800DC2EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350AD24D2B1FD4DA00DC2EC3 /* Preview Assets.xcassets in Resources */,
+				350AD2492B1FD4DA00DC2EC3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350AD2502B1FD4DA00DC2EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350AD25A2B1FD4DA00DC2EC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		350AD23D2B1FD4D800DC2EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350AD2762B1FD97800DC2EC3 /* Models.swift in Sources */,
+				350AD2472B1FD4D800DC2EC3 /* ContentView.swift in Sources */,
+				350AD2782B1FD9F500DC2EC3 /* ViewModel.swift in Sources */,
+				350AD2452B1FD4D800DC2EC3 /* Audible_AssistantApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350AD24E2B1FD4DA00DC2EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350AD2572B1FD4DA00DC2EC3 /* Audible_AssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		350AD2582B1FD4DA00DC2EC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350AD2632B1FD4DA00DC2EC3 /* Audible_AssistantUITestsLaunchTests.swift in Sources */,
+				350AD2612B1FD4DA00DC2EC3 /* Audible_AssistantUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		350AD2542B1FD4DA00DC2EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 350AD2402B1FD4D800DC2EC3 /* Audible Assistant */;
+			targetProxy = 350AD2532B1FD4DA00DC2EC3 /* PBXContainerItemProxy */;
+		};
+		350AD25E2B1FD4DA00DC2EC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 350AD2402B1FD4D800DC2EC3 /* Audible Assistant */;
+			targetProxy = 350AD25D2B1FD4DA00DC2EC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		350AD2642B1FD4DA00DC2EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		350AD2652B1FD4DA00DC2EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		350AD2672B1FD4DA00DC2EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Audible Assistant/Audible_Assistant.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Audible Assistant/Preview Content\"";
+				DEVELOPMENT_TEAM = XX23A4LAN7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Talk with AI Assistant";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewblumethal.Audible-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		350AD2682B1FD4DA00DC2EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Audible Assistant/Audible_Assistant.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Audible Assistant/Preview Content\"";
+				DEVELOPMENT_TEAM = XX23A4LAN7;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Talk with AI Assistant";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewblumethal.Audible-Assistant";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		350AD26A2B1FD4DA00DC2EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX23A4LAN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewblumethal.Audible-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audible Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Audible Assistant";
+			};
+			name = Debug;
+		};
+		350AD26B2B1FD4DA00DC2EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX23A4LAN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewblumethal.Audible-AssistantTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Audible Assistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Audible Assistant";
+			};
+			name = Release;
+		};
+		350AD26D2B1FD4DA00DC2EC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX23A4LAN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewblumethal.Audible-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Audible Assistant";
+			};
+			name = Debug;
+		};
+		350AD26E2B1FD4DA00DC2EC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XX23A4LAN7;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewblumethal.Audible-AssistantUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Audible Assistant";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		350AD23C2B1FD4D800DC2EC3 /* Build configuration list for PBXProject "Audible Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350AD2642B1FD4DA00DC2EC3 /* Debug */,
+				350AD2652B1FD4DA00DC2EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350AD2662B1FD4DA00DC2EC3 /* Build configuration list for PBXNativeTarget "Audible Assistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350AD2672B1FD4DA00DC2EC3 /* Debug */,
+				350AD2682B1FD4DA00DC2EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350AD2692B1FD4DA00DC2EC3 /* Build configuration list for PBXNativeTarget "Audible AssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350AD26A2B1FD4DA00DC2EC3 /* Debug */,
+				350AD26B2B1FD4DA00DC2EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		350AD26C2B1FD4DA00DC2EC3 /* Build configuration list for PBXNativeTarget "Audible AssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				350AD26D2B1FD4DA00DC2EC3 /* Debug */,
+				350AD26E2B1FD4DA00DC2EC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		350AD26F2B1FD5FE00DC2EC3 /* XCRemoteSwiftPackageReference "SiriWaveView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/SiriWaveView";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		350AD2722B1FD7A500DC2EC3 /* XCRemoteSwiftPackageReference "Audible-Assistant" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/asb1891/Audible-Assistant";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		350AD2702B1FD5FE00DC2EC3 /* SiriWaveView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 350AD26F2B1FD5FE00DC2EC3 /* XCRemoteSwiftPackageReference "SiriWaveView" */;
+			productName = SiriWaveView;
+		};
+		350AD2732B1FD7A500DC2EC3 /* XCAOpenAIClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 350AD2722B1FD7A500DC2EC3 /* XCRemoteSwiftPackageReference "Audible-Assistant" */;
+			productName = XCAOpenAIClient;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 350AD2392B1FD4D800DC2EC3 /* Project object */;
+}
